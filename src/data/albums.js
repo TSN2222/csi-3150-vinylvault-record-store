@@ -1,3 +1,12 @@
+import kindOfBlueCover from '../assets/kind-of-blue.jpg';
+import selectedAmbientWorksCover from '../assets/selected-ambient-works.jpg';
+import abbeyRoadCover from '../assets/abbey-road.jpg';
+import goldbergVariationsCover from '../assets/goldberg-variations.jpg';
+import headHuntersCover from '../assets/head-hunters.jpg';
+import musicHasTheRightToChildrenCover from '../assets/music-has-the-right-to-children.jpg';
+import rumoursCover from '../assets/rumours.jpg';
+import sleepCover from '../assets/sleep.jpg';
+
 export const ALBUMS = [
   {
     id: 'alb-01',
@@ -6,8 +15,7 @@ export const ALBUMS = [
     genre: 'Jazz',
     price: 38.99,
     stock: 9,
-    image:
-      'https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&auto=format&fit=crop&q=60',
+    image: kindOfBlueCover,
     description:
       'Peak modal jazz recorded in two sessions in 1959. Mastered from original analog tapes on heavy virgin vinyl.',
     specs: {
@@ -31,8 +39,7 @@ export const ALBUMS = [
     genre: 'Electronic',
     price: 44.5,
     stock: 5,
-    image:
-      'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=600&auto=format&fit=crop&q=60',
+    image: selectedAmbientWorksCover,
     description:
       'Seminal ambient techno masterwork featuring layered analog synthesizers and breakbeat rhythms on gatefold 2xLP.',
     specs: {
@@ -50,8 +57,7 @@ export const ALBUMS = [
     genre: 'Rock',
     price: 36.0,
     stock: 14,
-    image:
-      'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=60',
+    image: abbeyRoadCover,
     description:
       'Stereo mix produced by Giles Martin directly from original eight-track session tapes.',
     specs: {
@@ -75,8 +81,7 @@ export const ALBUMS = [
     genre: 'Classical',
     price: 31.25,
     stock: 4,
-    image:
-      'https://images.unsplash.com/photo-1520523839898-507125cd53c1?w=600&auto=format&fit=crop&q=60',
+    image: goldbergVariationsCover,
     description:
       "The landmark 1981 digital recording documenting Gould's contemplative return to Bach's variations.",
     specs: {
@@ -100,8 +105,7 @@ export const ALBUMS = [
     genre: 'Jazz',
     price: 34.0,
     stock: 8,
-    image:
-      'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=600&auto=format&fit=crop&q=60',
+    image: headHuntersCover,
     description:
       "Pioneering jazz-funk fusion powered by ARP synthesizers, clavinet grooves, and Paul Jackson's basslines.",
     specs: {
@@ -119,8 +123,7 @@ export const ALBUMS = [
     genre: 'Electronic',
     price: 42.0,
     stock: 6,
-    image:
-      'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&auto=format&fit=crop&q=60',
+    image: musicHasTheRightToChildrenCover,
     description:
       'Warm, nostalgic downtempo electronica built with degraded tape samples, vintage synth patches, and field recordings.',
     specs: {
@@ -144,8 +147,7 @@ export const ALBUMS = [
     genre: 'Rock',
     price: 29.99,
     stock: 16,
-    image:
-      'https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=600&auto=format&fit=crop&q=60',
+    image: rumoursCover,
     description:
       '1977 pop-rock classic pressed on high-grade vinyl with gatefold packaging and lyric insert.',
     specs: {
@@ -169,8 +171,7 @@ export const ALBUMS = [
     genre: 'Classical',
     price: 49.0,
     stock: 3,
-    image:
-      'https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&auto=format&fit=crop&q=60',
+    image: sleepCover,
     description:
       "Curated 2xLP selections from Richter's 8-hour composition scored for piano, string quintet, soprano, and modular electronics.",
     specs: {
