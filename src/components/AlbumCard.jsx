@@ -4,23 +4,29 @@ function AlbumCard({ album, onAddToCart }) {
   if (!album) return null;
 
   return (
-    <article>
-      <Link to={`/`}>
-        <img src={album.image} alt={album.title} loading='lazy' />
+    <article className='album-card'>
+      <Link className='album-image-link' to={`/`}>
+        <img
+          className='album-image'
+          src={album.image}
+          alt={album.title}
+          loading='lazy'
+        />
       </Link>
-      <div>
-        <span>{album.genre}</span>
-        <h3>
+      <div className='album-body'>
+        <span className='album-genre'>{album.genre}</span>
+        <h3 className='album-title'>
           <Link to={`/`}>{album.title}</Link>
         </h3>
-        <h4>{album.artist}</h4>
-        <p>
+        <h4 className='album-artist'>By: {album.artist}</h4>
+        <p className='album-price'>
           $
           {typeof album.price === 'number'
             ? album.price.toFixed(2)
             : 'Contact For Price'}
         </p>
         <button
+          className='btn'
           type='button'
           disabled={album.stock <= 0}
           onClick={() => onAddToCart(album)}

@@ -24,11 +24,12 @@ function CatalogPage({ albums }) {
         </p>
       </header>
 
-      <div>
+      <div className='filter-bar'>
         {genres.map((genre) => {
           return (
             <button
               key={genre}
+              className={`filter-btn ${selectedGenre === genre ? 'active' : ''}`}
               onClick={() => {
                 setSelectedGenre(genre);
               }}
@@ -39,7 +40,7 @@ function CatalogPage({ albums }) {
         })}
       </div>
 
-      <div>
+      <div className='album-grid'>
         {filteredAlbums.map((album) => {
           return <AlbumCard key={album.id} album={album}></AlbumCard>;
         })}
