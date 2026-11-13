@@ -5,7 +5,7 @@ function AlbumCard({ album, onAddToCart }) {
 
   return (
     <article className='album-card'>
-      <Link className='album-image-link' to={`/`}>
+      <Link className='album-image-link' to={`/album/${album.id}`}>
         <img
           className='album-image'
           src={album.image}
@@ -16,7 +16,7 @@ function AlbumCard({ album, onAddToCart }) {
       <div className='album-body'>
         <span className='album-genre'>{album.genre}</span>
         <h3 className='album-title'>
-          <Link to={`/`}>{album.title}</Link>
+          <Link to={`/album/${album.id}`}>{album.title}</Link>
         </h3>
         <h4 className='album-artist'>By: {album.artist}</h4>
         <p className='album-price'>
