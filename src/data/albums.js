@@ -24,13 +24,7 @@ export const ALBUMS = [
       speed: '33 1/3 RPM',
       label: 'Columbia',
     },
-    tracklist: [
-      'So What',
-      'Freddie Freeloader',
-      'Blue in Green',
-      'All Blues',
-      'Flamenco Sketches',
-    ],
+    tracklist: ['So What', 'Freddie Freeloader', 'Blue in Green', 'All Blues', 'Flamenco Sketches'],
   },
   {
     id: 'alb-02',
@@ -66,13 +60,7 @@ export const ALBUMS = [
       speed: '33 1/3 RPM',
       label: 'Apple Records',
     },
-    tracklist: [
-      'Come Together',
-      'Something',
-      "Octopus's Garden",
-      'Here Comes the Sun',
-      'The End',
-    ],
+    tracklist: ['Come Together', 'Something', "Octopus's Garden", 'Here Comes the Sun', 'The End'],
   },
   {
     id: 'alb-04',

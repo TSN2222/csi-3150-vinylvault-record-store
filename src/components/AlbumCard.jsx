@@ -6,12 +6,7 @@ function AlbumCard({ album, onAddToCart }) {
   return (
     <article className='album-card'>
       <Link className='album-image-link' to={`/album/${album.id}`}>
-        <img
-          className='album-image'
-          src={album.image}
-          alt={album.title}
-          loading='lazy'
-        />
+        <img className='album-image' src={album.image} alt={album.title} loading='lazy' />
       </Link>
       <div className='album-body'>
         <span className='album-genre'>{album.genre}</span>
@@ -20,10 +15,7 @@ function AlbumCard({ album, onAddToCart }) {
         </h3>
         <h4 className='album-artist'>By: {album.artist}</h4>
         <p className='album-price'>
-          $
-          {typeof album.price === 'number'
-            ? album.price.toFixed(2)
-            : 'Contact For Price'}
+          ${typeof album.price === 'number' ? album.price.toFixed(2) : 'Contact For Price'}
         </p>
         <button
           className='btn'

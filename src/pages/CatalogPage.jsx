@@ -18,9 +18,8 @@ function CatalogPage({ albums }) {
       <header>
         <h1>VinylVault Indie Records</h1>
         <p>
-          Discover timeless classics and fresh sounds across jazz, rock,
-          electronic, and classical. Find your next favorite album and make room
-          for something special in your collection.
+          Discover timeless classics and fresh sounds across jazz, rock, electronic, and classical.
+          Find your next favorite album and make room for something special in your collection.
         </p>
       </header>
 

@@ -7,10 +7,7 @@ import './styles.css';
 function App() {
   return (
     <Routes>
-      <Route
-        path='/'
-        element={<CatalogPage albums={ALBUMS}></CatalogPage>}
-      ></Route>
+      <Route path='/' element={<CatalogPage albums={ALBUMS}></CatalogPage>}></Route>
       <Route
         path='/album/:albumId'
         element={<AlbumDetailsPage albums={ALBUMS}></AlbumDetailsPage>}
