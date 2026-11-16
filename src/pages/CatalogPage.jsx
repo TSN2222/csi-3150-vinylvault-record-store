@@ -2,7 +2,7 @@ import { useState } from 'react';
 import AlbumCard from '../components/AlbumCard';
 import '../styles.css';
 
-function CatalogPage({ albums }) {
+function CatalogPage({ albums, onAddToCart }) {
   const genres = ['All', 'Jazz', 'Electronic', 'Rock', 'Classical'];
   const [selectedGenre, setSelectedGenre] = useState('All');
 
@@ -41,7 +41,7 @@ function CatalogPage({ albums }) {
 
       <div className='album-grid'>
         {filteredAlbums.map((album) => {
-          return <AlbumCard key={album.id} album={album}></AlbumCard>;
+          return <AlbumCard key={album.id} album={album} onAddToCart={onAddToCart}></AlbumCard>;
         })}
       </div>
     </>
