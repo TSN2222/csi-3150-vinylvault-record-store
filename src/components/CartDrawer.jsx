@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
 function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
-  const navigate = useNavigate;
+  const navigate = useNavigate();
   if (!isOpen) return null;
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 

@@ -1,5 +1,6 @@
 import CatalogPage from './pages/CatalogPage';
 import AlbumDetailsPage from './pages/AlbumDetailsPage';
+import CheckoutPage from './pages/CheckoutPage';
 import Navbar from './components/Navbar';
 import CartDrawer from './components/CartDrawer';
 import { ALBUMS } from './data/albums';
@@ -61,6 +62,10 @@ function App() {
             element={
               <AlbumDetailsPage albums={ALBUMS} onAddToCart={handleAddToCart}></AlbumDetailsPage>
             }
+          ></Route>
+          <Route
+            path='/checkout'
+            element={<CheckoutPage cart={cart} onClearCart={handleClearCart}></CheckoutPage>}
           ></Route>
         </Routes>
       </main>
