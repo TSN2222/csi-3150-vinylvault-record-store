@@ -19,6 +19,7 @@ function Navbar({ cartCount, onOpenCart }) {
           aria-label={`Shipping cart with ${cartCount} items`}
         >
           🛒 Cart
+          {cartCount > 0 && <span className='badge-pill'>{cartCount}</span>}
         </button>
       </nav>
     </header>
