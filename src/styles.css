@@ -353,6 +353,9 @@ header > p {
 /* Site header and navigation */
 .site-header {
   display: flex;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
