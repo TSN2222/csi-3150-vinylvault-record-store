@@ -30,7 +30,7 @@ function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
                   <img src={item.image} alt={item.name} className='cart-item-img' />
 
                   <div className='cart-item-info'>
-                    <h4>{item.name}</h4>
+                    <h4>{item.title}</h4>
                     <p className='cart-item-price'>${(item.price * item.quantity).toFixed(2)}</p>
                     <div className='qty-controls'>
                       <button onClick={() => onUpdateQuantity(item.id, -1)}>-</button>
