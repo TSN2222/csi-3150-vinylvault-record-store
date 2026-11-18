@@ -415,7 +415,7 @@ header > p {
 /* Cart drawer layout */
 .drawer-overlay {
   display: flex;
-  z-index: 200;
+  z-index: 1100;
   position: fixed;
   justify-content: flex-end;
   inset: 0;
