@@ -8,7 +8,11 @@ const CheckoutPage = ({ cart, onClearCart }) => {
     fullName: '',
     email: '',
     shippingAddress: '',
+    city: '',
     zipCode: '',
+    cardNumber: '',
+    cardExpiry: '',
+    cardCvv: '',
   });
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -100,6 +104,18 @@ const CheckoutPage = ({ cart, onClearCart }) => {
             />
           </div>
           <div className='checkout-field'>
+            <label htmlFor='city'>City *</label>
+            <input
+              type='text'
+              name='city'
+              id='city'
+              autoComplete='address-level2'
+              required
+              value={formData.city}
+              onChange={handleChange}
+            />
+          </div>
+          <div className='checkout-field'>
             <label htmlFor='zipCode'>ZIP Code *</label>
             <input
               type='text'
@@ -110,6 +126,54 @@ const CheckoutPage = ({ cart, onClearCart }) => {
               required
               pattern='[0-9]{5}'
               value={formData.zipCode}
+              onChange={handleChange}
+            />
+          </div>
+          <h2>Card Details</h2>
+          <div className='checkout-field'>
+            <label htmlFor='cardNumber'>Card Number *</label>
+            <input
+              type='text'
+              name='cardNumber'
+              id='cardNumber'
+              autoComplete='cc-number'
+              inputMode='numeric'
+              required
+              pattern='[0-9]{13,19}'
+              maxLength={19}
+              title='Enter 13 to 19 digits without spaces.'
+              value={formData.cardNumber}
+              onChange={handleChange}
+            />
+          </div>
+          <div className='checkout-field'>
+            <label htmlFor='cardExpiry'>Expiration Date (MM/YY) *</label>
+            <input
+              type='text'
+              name='cardExpiry'
+              id='cardExpiry'
+              autoComplete='cc-exp'
+              required
+              pattern='(0[1-9]|1[0-2])/[0-9]{2}'
+              maxLength={5}
+              placeholder='MM/YY'
+              value={formData.cardExpiry}
+              onChange={handleChange}
+            />
+          </div>
+          <div className='checkout-field'>
+            <label htmlFor='cardCvv'>Security Code (CVV) *</label>
+            <input
+              type='password'
+              name='cardCvv'
+              id='cardCvv'
+              autoComplete='cc-csc'
+              inputMode='numeric'
+              required
+              pattern='[0-9]{3,4}'
+              maxLength={4}
+              title='Enter a 3- or 4-digit security code.'
+              value={formData.cardCvv}
               onChange={handleChange}
             />
           </div>
