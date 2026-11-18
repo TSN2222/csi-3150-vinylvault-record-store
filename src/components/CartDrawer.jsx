@@ -27,7 +27,7 @@ function CartDrawer({ isOpen, onClose, cart, cartCount, onUpdateQuantity, onRemo
             <ul className='cart-list'>
               {cart.map((item) => (
                 <li key={item.id} className='cart-item'>
-                  <img src={item.image} alt={item.name} className='cart-item-img' />
+                  <img src={item.image} alt={item.title} className='cart-item-img' />
 
                   <div className='cart-item-info'>
                     <h4>{item.title}</h4>

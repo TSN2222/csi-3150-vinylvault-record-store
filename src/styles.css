@@ -41,6 +41,7 @@ header > p {
 /* Catalog filters */
 .filter-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 1rem 0 3rem 0;
   gap: 0.5rem;
