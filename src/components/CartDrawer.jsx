@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
+function CartDrawer({ isOpen, onClose, cart, cartCount, onUpdateQuantity, onRemove }) {
   const navigate = useNavigate();
   if (!isOpen) return null;
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -14,7 +14,7 @@ function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, onRemove }) {
     <div className='drawer-overlay' onClick={onClose}>
       <aside className='drawer-panel' onClick={(e) => e.stopPropagation()}>
         <div className='drawer-header'>
-          <h2>Your Cart ({cart.length})</h2>
+          <h2>Your Cart ({cartCount})</h2>
           <button type='button' className='btn-close' onClick={onClose}>
             &times;
           </button>

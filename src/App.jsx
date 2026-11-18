@@ -71,6 +71,7 @@ function App() {
       </main>
       <CartDrawer
         cart={cart}
+        cartCount={totalCartCount}
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
         onUpdateQuantity={handleUpdateQuantity}
